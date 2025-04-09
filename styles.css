@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
 }
 
@@ -44,7 +45,7 @@ body {
     background: none;
     border: none;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 50%;
@@ -61,10 +62,10 @@ body {
     right: 0;
     background-color: var(--settings-bg);
     border: 1px solid var(--settings-border);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 1rem;
-    margin-top: 0.5rem;
-    min-width: 200px;
+    margin-top: 0rem;
+    min-width: 150px;
 }
 
 .settings-menu.hidden {
@@ -75,14 +76,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    font-size: 0.9rem;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 1.75rem;
+    height: 1rem;
 }
 
 .switch input {
@@ -100,16 +102,16 @@ body {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 20px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 0.8rem;
+    width: 0.8rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
     background-color: white;
     border-radius: 50%;
     transition: .4s;
@@ -120,14 +122,14 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(0.75rem);
 }
 
 .display-container {
     width: 100%;
-    margin-top: 2rem;
-    text-align: right;
+    text-align: center;
     max-width: 800px;
+    margin: auto;
 }
 
 .display-artwork {
